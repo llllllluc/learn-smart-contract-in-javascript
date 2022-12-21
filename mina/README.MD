@@ -1,4 +1,4 @@
-# Overview on JS contract on Mina
+# Overview on Mina
 Mina is another blockchain built from ground up with a focus on privacy. It used zero knowledge to enable users keep their data off chain and only submit the zk proof on chain, for example: user can submit the zk proof of a sudoku solution on chain, then public can know whether user solved the sudoku by verifying the zk proof, without knowing the actual solution. 
 
 Therefore Mina smart contracts are different from other blockchains. 
@@ -6,6 +6,7 @@ Therefore Mina smart contracts are different from other blockchains.
 2. Because of the existence of off chain part, developers need to do extract validation in contracts. 
 3. Since smart contracts are run off chain, gas fee is small because it's only for verification.
 
+# Overview on JS contract on Mina
 Similar to Algorand's PyTeal, Mina provides a library called [SnarkyJS](https://github.com/o1-labs/snarkyjs/) to help you write contracts in TypeScript.
 
 # My hello world experience

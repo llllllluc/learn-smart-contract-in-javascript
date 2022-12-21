@@ -1,5 +1,10 @@
+# Overview on NEAR
+NEAR is a layer 1 blockchain use sharding to improve scalability. It supports smart contract via WASM. So any language compiles to WASM can be support natively, that being said, RUST is the main one that's used at scale. With WASM, NEAR manages to support other VM as long as they can compile to WASM, this is how it supports EVM (Aurora) and QuickJS (javascript VM).
+
 # Overview on JS contract on NEAR
-NEAR is another blockchain build from ground up, it has its own ecosystem and tooling. It used [WASM](https://webassembly.org/) (WebAssembly) as its virtual machine. It support smart contract written in JavaScript by using [QuickJS](https://bellard.org/quickjs/). My understanding is it will compile the js contracts to WASM bytecodes then it can be run on NEAR.
+It support smart contract written in JavaScript by using [QuickJS](https://bellard.org/quickjs/). JS contracts can be interpreted by QuickJS vm which resides in NEAR's native WASM. 
+
+Note: JS smart contract is still new on NEAR, comparing to RUST contract which is the go to language to write smart contract on NEAR.
 
 # My hello world experience
 NEAR provides a super easy to use cli `create-near-app` to help you scaffold a basic contract that stores a text on chain with 2 methods for reading it and updating it. This cli is similar to `create-react-app` so it gives frontend / fullstack developer a sense of familiarity.
